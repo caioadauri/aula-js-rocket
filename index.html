@@ -1,24 +1,19 @@
 <html>
     <head>
+        <meta charset="UTF-8">
         <title>Js Rocket</title>
     </head>
     <body>
 
         <script>
-           function retornaSexo(sexo){
-              switch (sexo){
-                  case 'M':
-                   return 'Masculino';
-                  case 'F':
-                   return 'Feminino';
-                  default:
-                   return 'Outro'; 
+           // AND, OR NOT
 
-              }
+           var sexo = 'M', idade = 23;
+
+           if (sexo === 'M' && idade >= 18) {
+               console.log('okay');
            }
-
-           var resultado = retornaSexo('A');
-           console.log(resultado);
+           
         </script>
     </body>
 </html>
