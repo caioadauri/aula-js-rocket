@@ -6,19 +6,18 @@
 
         <script>
            function retornaSexo(sexo){
-               // M, F
-               // Masculino Feminino
-
-               if (sexo === 'M') {
+              switch (sexo){
+                  case 'M':
                    return 'Masculino';
-               } else if (sexo === 'F') {
+                  case 'F':
                    return 'Feminino';
-               } else {
-                   return 'Outro';
-               }
+                  default:
+                   return 'Outro'; 
+
+              }
            }
 
-           var resultado = retornaSexo('F');
+           var resultado = retornaSexo('A');
            console.log(resultado);
         </script>
     </body>
