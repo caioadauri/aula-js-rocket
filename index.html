@@ -6,14 +6,17 @@
     <body>
 
         <script>
-           var endereco = {
-               rua: 'Rua dos pinheiros',
-               numero: 1293,
-               bairro: 'Centro',
-               cidade: 'São Paulo',
-               uf: 'SP'
-           };
-           console.log('O usuario mora em',endereco.cidade,'/',endereco.uf,', no',endereco.bairro,'na',endereco.rua,'com nº',endereco.numero);
+            var pares = [];
+            function exibePares(x, y){
+                while(x<=y){
+                    if((x%2)==0){
+                        pares.push(x);
+                    }
+                    x++;
+                }
+            }
+            exibePares(32,321);
+            console.log(pares);
         </script>
     </body>
 </html>
